@@ -1,0 +1,88 @@
+
+.container{
+    margin: 0 auto;
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows: repeat(6,50px);
+    gap:10px;
+    
+
+    
+}
+.block {
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    
+}
+.block:nth-child(4n-1){
+    background-color: red;
+}
+.block:nth-child(21),
+.block:nth-child(22){
+    background-color: blue;
+}
+.block:last-child{
+    background-color: blue;
+}
+
+.btn{
+    margin: 70px auto;
+    display: flex;
+    max-width: 800px;
+    justify-content: center;
+    position: relative;
+    
+
+    
+}
+
+button {
+    width: 501px;
+    height: 92px;
+    background: #44D3A8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    border: none;
+    color:white;
+    cursor: pointer;
+}
+
+
+button::before{
+    content: '';
+    display: flex;
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    left: -100px;
+    border-top: 2px solid #c4c4c4;
+    border-bottom: 2px solid #c4c4c4;
+}
+
+
+
+button::after{
+    content: '';
+    display: flex;
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background: url(./Rectangle\ 5.png);
+    right: -90px;
+    top: 43px;
+    
+}
+
+.inside_btn::after{
+    content: '';
+    display: flex;
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background: url(./Rectangle\ 5.png);
+    top: 36px;
+    right: -90px;
+    
+}
